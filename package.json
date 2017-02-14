@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "electron": "1.4.12"
+  },
+  "name": "electron-webview-zoom",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Cameron Nokes",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron index.js"
+  }
+}

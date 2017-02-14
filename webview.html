@@ -1,0 +1,36 @@
+<html>
+<head>
+  <style>
+    body {
+      background: whitesmoke;
+    }
+  </style>
+</head>
+<body>
+  
+  <button id="btn">Make iframe</button>
+  <h1>Content</h1>
+  <p>
+    Here's some more content here.
+  </p>
+  
+  <br />
+  <br />
+  
+  <div id="iframe-here"></div>
+  
+  <script>
+  
+    document.getElementById('btn').addEventListener('click', () => {
+      for(let el of document.querySelectorAll('iframe')) {
+        el.parentNode.removeChild(el);
+      }
+      const iframe = document.createElement('iframe');
+      iframe.src = 'https://www.youtube.com/embed/j2V_YeQvtcY';
+      document.getElementById('iframe-here').appendChild(iframe);
+    });
+  
+  </script>
+  
+</body>
+</html>
